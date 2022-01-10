@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css" integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"><link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>E-Commerce</title>
+
+
+    <base target="_top">
+	<!--INCLUDE REQUIRED EXTERNAL JAVASCRIPT AND CSS LIBRARIES-->
+	<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+	<script src="https://cdn.datatables.net/1.10.23/js/jquery.dataTables.min.js"></script>
+	<script src="https://cdn.datatables.net/1.10.23/js/dataTables.bootstrap4.min.js"></script>
+	<link rel="stylesheet" type="text/css"
+		href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.23/css/dataTables.bootstrap4.min.css">
+
+	<?!= include('JavaScript'); ?><!--INCLUDE JavaScript.html FILE-->
+
+</head>
+<body style="background: #56565b;color: white;font-family: Arial, Helvetica, sans-serif;">
+    <nav class="nav nav-top">
+        <div class="logo">
+            <a href="index.html"><img src="1Stop 01.png" alt="1stop" width="150px" ></a>
+        </div>
+        <div class="nav_side">
+            <a href="about.html">About</a>
+            <a href="service.html">Service</a>
+            <a href="blog.html">Blogs</a>
+            <a href="contact.html">Contacts</a>
+            <a href="login.html">Login/Register</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h2>Sign Up</h2>
+
+        <form >
+            <div class="form-item-username">
+                <input type="text" name="firstName" id="firstName" placeholder="First Name">
+                <input type="text" name="lastName" id="lastName" placeholder="Last Name">
+            </div>
+
+            <div class="form-item">
+                <input type="email" name="email" id="email" placeholder="Email">
+            </div>
+
+            <div class="form-item">
+                <!-- add a password format display -->
+                <span class="pwd-format">
+                    8-15 AlphaNumeric Characters
+                </span>
+                <input type="password" name="password" id="password" placeholder="Enter password">
+                <input type="password" name="confirmPassword" id="confirmPassword" placeholder="Confirm password">
+            </div>
+
+            <div class="accept-box">
+                <input type="checkbox" name="accept" id="accept">
+                <p>I accept the <a href="#">Terms & Conditions</a></p>
+            </div>
+
+            <div class="form-btns">
+                <button class="signup" type="submit" onclick="showData()">Sign Up</button>
+                <div class="options">
+                    Already hav an account? <a href="#">Login here</a>
+                </div>
+            </div>
+
+        </form>
+        <p>Copyright &copy; yourwebsite.com</p>
+    </div>
+
+</body>
+
+</html>
